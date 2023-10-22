@@ -27,4 +27,9 @@ public class BookServiceImpl implements BookService {
         }
         return bookRepository.save(newBook);
     }
+
+    @Override
+    public void delete(Long id) {
+        bookRepository.deleteById(id);
+    }
 }

@@ -6,4 +6,6 @@ public interface BookService {
     Book findById(Long id);
 
     Book create(Book newBook);
+
+    void delete(Long id);
 }

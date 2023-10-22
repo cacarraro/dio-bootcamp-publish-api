@@ -15,8 +15,6 @@ classDiagram
   }
 
   class Library {
-    +checkOutBook(account: Account, book: Book): boolean
-    +returnBook(account: Account, book: Book): void
   }
 
   Account "1" -- "*" Library : has
